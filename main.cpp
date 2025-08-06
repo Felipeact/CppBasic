@@ -14,11 +14,14 @@ double store decimal point = 1.1, 2.2, 3.3, etc.
 
 */
 
+#include <algorithm>
+
 int EXOne();
 int EXTwo();
 int EXThree();
 int EXFour();
 int EXFive();
+int EXSix();
 
 #include <iostream>
 
@@ -39,6 +42,7 @@ int main ()
     EXThree();
     EXFour();
     EXFive();
+    EXSix();
 
     return 0;
 
@@ -286,3 +290,123 @@ int EXFive()
 /*
  * Multiple line comment
  */
+
+
+ // Fundamental Data Types
+
+/*
+ *  Statically Static               Dynamically-Typed
+ *
+ *  C++                             Python
+ *  C#                              Javascript
+ *  Java                            Ruby
+ *
+ *  Whole number Values
+ *
+ *  Type            Bytes          Range
+ *  short           2              -32,768 to 32,767
+ *  int             4              -2 Billion to 2 Billion
+ *  long            4              Same ^
+ *  long long       8
+ *
+ *  Decimal Values
+ *
+ *  float           8              -3.4E38 to 3.4E38
+ *  double          8              -1.7E308 to 1.7e308
+ *  long double     8              -3.4E932 to 1.7E4832
+ *
+ *  Boolean Values
+ *
+ *  bool            1              true/false
+ *  char            1
+ */
+
+int DataType()
+{
+
+    double Price = 99.99;
+    float InterestRate = 3.67F; // when working with float values always add the F at the end of the value
+
+    long FileSize = 90000L; // when working with float values always add the F at the end of the value
+    char letter = 'a';
+    bool isValid = false;
+
+    // we can use auto to let the compile to decide what type is our variable.
+
+    // brace initialization
+
+    double Number{1.2}; // same as double Number = 1.2;
+
+    cout << Number;
+    return 0;
+}
+
+// Working with number
+
+/*
+*  Type                     Digits          Example
+*  Decimal(Base 10)         0-9             255
+*  Binary(Base 2)           0,1             111111
+*  Hexadecimal(Base 16)     0-9, A-F        FF
+*
+*  unsigned int number = -255;  an unsigned variable cannot have a negative value
+*
+*
+*/
+
+int Numbers()
+{
+    //Decimal System
+    int Number = 255;
+    cout << Number; // 255
+
+    //Binary System
+    Number = 0b11111111;
+    cout << Number; // 255
+
+    // Hexadecimal System,
+    Number = 0xFF;
+    cout << Number; // 255
+
+    return 0;
+}
+
+//Narrowing
+
+int Narrowing()
+{
+    int number = 1'000'000;
+    short another = number;
+
+    cout << another;
+    return 0;
+}
+
+// Random Numbers
+
+#include <cstdlib>
+#include <ctime>
+
+int RandomNumbers()
+{
+    srand(time(nullptr));
+    int number = rand() % 10;
+    cout << number;
+    return 0;
+}
+
+// Exercise 06
+
+//rolling a dice
+
+int EXSix() {
+    srand(time(nullptr));
+
+    const short MinValue = 1;
+    const  short MaxValue = 6;
+
+    short Dice =  rand() % (MaxValue - MinValue + 1) + MinValue;
+
+    cout << Dice;
+    return 0;
+}
