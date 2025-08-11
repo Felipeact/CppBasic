@@ -3,4 +3,4 @@ project(CppBasic_)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(CppBasic_ main.cpp)
+add_executable(CppBasic_ main.cpp, basic1.cpp)
