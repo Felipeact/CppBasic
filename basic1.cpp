@@ -101,9 +101,53 @@ using namespace std;
 #include  <iostream>
 using namespace std;
 
+void Calculator();
+
 int main () {
 
-  cout << "Hello World! :)";
+  cout << "Hello World! :)" << endl;
+  Calculator();
+
 
  return 0;
+}
+
+void Calculator() {
+ char CharacterOperator;
+ double NumberOne, NumberTwo;
+ int result = 0;
+
+ cout << "Enter and Operator" << endl;
+ cin >> CharacterOperator;
+
+
+ while (true) {
+  if ( CharacterOperator != '+' || CharacterOperator != '-') {
+   cout << "Enter a valid operator " << endl;
+
+  }
+
+  cout << "Enter a number" << endl;
+  cin >> NumberOne;
+  cout << "Enter a second number" << endl;
+  cin >> NumberTwo;
+
+  if ( CharacterOperator == '+') {
+   result = NumberOne + NumberTwo;
+   cout << result << endl;
+  }
+
+  if (CharacterOperator == '-') {
+   result = NumberOne - NumberTwo;
+   cout << result << endl;
+  }
+
+  if ( CharacterOperator == '*') {
+   result =  NumberOne * NumberTwo;
+   cout << result << endl;
+  }
+
+ }
+
+
 }
