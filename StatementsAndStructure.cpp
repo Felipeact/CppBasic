@@ -47,7 +47,19 @@ The following are all characters: a, 2, $, and =.
  // <- this line is blank, so it is ignored by the compiler, this helps to add the program more readable to humans
 int main() //
 {// Opening main function, start to read the statements
-    std::cout << "Hello world!";
-    return 0;
+    std::cout << "Hello world!"; // Display hello world on the console.
+    return 0; // Return statement returns an integer value 0 to the operating system indicating everything is okay
 } // closing the main function, stop to read the statements
 
+
+//------------------- Syntax ans Syntax error ---------------------
+
+/* The set of rules that describes how specific words (and ponctuation) can be arranged to form valid sentences in a
+ * language is called syntax.
+ *
+ * When you compile the program, the compile is responsible for make sure your program follow these syntactical rules.
+ * if you dont follow these rules the compile will return a syntax error.
+ *
+ * Since the syntax for most statements requires those statements to end in a semicolon.
+ *
+ */
