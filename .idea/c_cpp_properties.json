@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "CLion",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [
+      ],
+      "cStandard": "c17",
+      "cppStandard": "c++20",
+      "intelliSenseMode": "macos-clang-x86",
+      "customConfigurationVariables": {},
+      "compilerArgs": [],
+      "mergeConfigurations": false,
+      "macFrameworkPath": [],
+      "configurationProvider": "",
+      "windowsSdkVersion": "",
+      "dotConfig": "",
+      "forcedInclude": [],
+      "browse": {}
+    }
+  ],
+  "version": 4
+}
