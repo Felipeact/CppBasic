@@ -9,3 +9,5 @@ This material cover all the basics of d C++, read on the following order.
 5. Introduction iostream
 6. Uninitialized Variables and Undefined Behavior
 7. Keywords and Naming identifiers
+8. Introduction to Function
+9. Function return values.
