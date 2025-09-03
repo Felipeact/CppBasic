@@ -26,3 +26,4 @@ This material cover all the basics of d C++, read on the following order.
 
 1. Introduction to fundamental data Types
 2. Void
+3. Object size and the sizeof operator 
